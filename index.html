@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+
+    <section id="logged-out-view">
+      <div class="container">
+        <h1>Authentication project</h1>
+  
+        <div class="other-provider-btns">
+          
+        </div>
+  
+        <div class="form-info-auth">
+          <button id="google" class="google-btn">
+            <img src="images/google image.png" class="google-btn-logo" alt="google logo">
+            Sign in with Google
+          </button>
+  
+          <!-- <input id="name-input" type="text" placeholder="First Name"> -->
+          <input id="email-input" type="email" placeholder="Email">
+          <input id="password" type="password" placeholder="Password">
+  
+          <button id="sign-in-btn" class="highlight">Sign In</button>
+          <button id="create-account-btn" class="highlight-a">Create Account</button>
+        </div>
+      </div>
+    </section>
+    
+    <section id="logged-in-view">
+      <div class="container">
+        <nav>
+          <button id="sign-out-btn" class="icon-btn">
+            <img src="images/icon-sign-out.svg" class="icon-img-btn" alt="sign out image">
+            Sign out
+          </button>
+        </nav>
+    
+        <div class="app-container">
+
+          <div class="user-section">
+            <img id="user-profile-picture" alt="User's profile picture">
+            <h2 id="user-greeting"></h2>
+            
+          </div>
+
+          <input id="display-name-input" type="text" placeholder="Display Name" class="ele">
+          <input id="photo-url-input" type="text" placeholder="Profile Photo URL" class="ele">
+          <button id="update-profile-btn" class="primary-btn ele highlight">Update profile</button>
+
+          <img src="images/jerryandthebird.gif" alt="jerry and a bird dancing">
+        </div>
+      </div>
+      
+    </section>
+  
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+    <script >
+     
+      const firebaseConfig = {
+        apiKey: "AIzaSyCp460zTDAk2WcvD1g6ZFQu-CnuybqqhX4",
+        authDomain: "ixnote-login-project.firebaseapp.com",
+        projectId: "ixnote-login-project",
+        storageBucket: "ixnote-login-project.appspot.com",
+        messagingSenderId: "723183238421",
+        appId: "1:723183238421:web:b677dd7ffd31544ff13d1c"
+      };
+    
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+  
+      const auth = firebase.auth();
+  
+    </script> -->
+  
+
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
